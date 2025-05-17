@@ -33,3 +33,7 @@ func main() {
 
 	// Output: Value (5 is skipped): 1 2 3 4 6 7 8 9
 }
+
+//  How to run this program:
+// 1. Open the folder: control-structures
+// 2. Run the command: go run loop_control.go
