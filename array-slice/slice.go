@@ -37,4 +37,13 @@ func main() {
 	arr := [3]int{1, 2, 3}
 	arrayConverted := arr[:]
 	fmt.Println("Array converted to slice:", arrayConverted)
+
+	// Make concept - create slice with len=0, cap=2
+	makeArr := make([]int, 0, 1)
+	fmt.Println("Before append - len:", len(makeArr), "cap:", cap(makeArr))
+
+	makeArr = append(makeArr, 1, 2, 3, 4, 5)
+	fmt.Println("After append - make:", makeArr)
+	fmt.Println("After append - len:", len(makeArr), "cap:", cap(makeArr))
+
 }
