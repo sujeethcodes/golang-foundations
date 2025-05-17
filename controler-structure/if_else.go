@@ -18,3 +18,7 @@ func main() {
 		fmt.Println("Grade: F")
 	}
 }
+
+//  How to run this program:
+// 1. Open the folder: control-structures
+// 2. Run the command: go run if_else.go
