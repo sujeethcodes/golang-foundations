@@ -51,3 +51,7 @@ func main() {
 	varDeclare()
 	constDeclare()
 }
+
+//  How to run this program:
+// 1. Open the folder: variable-data-types
+// 2. Run the command:  go run variable.go
