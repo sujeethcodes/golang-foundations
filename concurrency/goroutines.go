@@ -1,9 +1,30 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
+
+// Simple goroutine function
+func printValue() {
+	data := map[string]string{
+		"Name": "Sujeeth",
+		"Role": "Software Engineer",
+	}
+	fmt.Println(data)
+}
 
 func main() {
-	fmt.Println("concurrency start")
+	fmt.Println("Main started")
+
+	//  "go" keyword runs the function in a separate goroutine
+	go printValue()
+
+	//  Main function itself runs in a goroutine (main goroutine)
+	// So, we add Sleep to give time for other goroutines to finish
+	time.Sleep(1 * time.Second) // Give enough time for goroutine to finish
+
+	fmt.Println("Main ended")
 }
 
 // what is concurrency, when they used and, what is usecase ?
